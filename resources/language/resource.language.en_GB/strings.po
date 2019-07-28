@@ -25,6 +25,14 @@ msgctxt "#32001"
 msgid "Change Set"
 msgstr ""
 
+msgctxt "#32002"
+msgid "items"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Pages"
+msgstr ""
+
 msgctxt "#32006"
 msgid "Edit Attributes"
 msgstr ""
