@@ -1,9 +1,11 @@
-import os, sys
-import xbmc, xbmcgui
-from xmlParser import XMLParser
+import os
+import sys
+import xbmc
+import xbmcgui
+from .xmlParser import XMLParser
 
 #enable localization
-getLS   = sys.modules[ "__main__" ].LANGUAGE
+getLS = sys.modules[ "__main__" ].LANGUAGE
 CWD = sys.modules[ "__main__" ].CWD
 
 class GUI(xbmcgui.WindowXMLDialog):
@@ -20,7 +22,7 @@ class GUI(xbmcgui.WindowXMLDialog):
         self.defineControls()
         self.feedsList = self.parser.feedsList[self.setNum]['feedslist'] #shortname
         if not self.feedsList:
-            xbmcgui.Dialog().ok(getLS(40)+'RssFeeds.xml', 'RssFeeds.xml '+getLS(32041), getLS(32042), getLS(32043))
+            xbmcgui.Dialog().ok(getLS(40) + 'RssFeeds.xml', 'RssFeeds.xml ' + getLS(32041), getLS(32042), getLS(32043))
             self.closeDialog()
         self.showDialog()
 
@@ -28,23 +30,23 @@ class GUI(xbmcgui.WindowXMLDialog):
         #actions
         self.action_cancel_dialog = ( 9, 10, 92, 216, 247, 257, 275, 61467, 61448 )
         #control ids
-        self.control_heading_label_id       = 2
-        self.control_list_label_id          = 4
-        self.control_list_id                = 10
-        self.control_changeSet_button_id    = 11
-        self.control_add_button_id          = 13
-        self.control_remove_button_id       = 14
-        self.control_ok_button_id           = 18
-        self.control_cancel_button_id       = 19
+        self.control_heading_label_id = 2
+        self.control_list_label_id = 4
+        self.control_list_id = 10
+        self.control_changeSet_button_id = 11
+        self.control_add_button_id = 13
+        self.control_remove_button_id = 14
+        self.control_ok_button_id = 18
+        self.control_cancel_button_id = 19
         #controls
-        self.heading_label      = self.getControl(self.control_heading_label_id)
-        self.list_label         = self.getControl(self.control_list_label_id)
-        self.list               = self.getControl(self.control_list_id)
-        self.add_button         = self.getControl(self.control_add_button_id)
-        self.remove_button      = self.getControl(self.control_remove_button_id)
-        self.changeSet_button   = self.getControl(self.control_changeSet_button_id)
-        self.ok_button          = self.getControl(self.control_ok_button_id)
-        self.cancel_button      = self.getControl(self.control_cancel_button_id)
+        self.heading_label = self.getControl(self.control_heading_label_id)
+        self.list_label = self.getControl(self.control_list_label_id)
+        self.list = self.getControl(self.control_list_id)
+        self.add_button = self.getControl(self.control_add_button_id)
+        self.remove_button = self.getControl(self.control_remove_button_id)
+        self.changeSet_button = self.getControl(self.control_changeSet_button_id)
+        self.ok_button = self.getControl(self.control_ok_button_id)
+        self.cancel_button = self.getControl(self.control_cancel_button_id)
 
     def showDialog(self):
         self.heading_label.setLabel(getLS(32000))
@@ -78,7 +80,7 @@ class GUI(xbmcgui.WindowXMLDialog):
             self.updateFeedsList()
         #change/modify set
         elif controlId == self.control_changeSet_button_id:
-            import setEditor
+            from . import setEditor
             setEditorUI = setEditor.GUI("script-RSS_Editor.xml", CWD, "default", setNum = self.setNum)
             self.close()
             del setEditorUI
@@ -121,4 +123,4 @@ class GUI(xbmcgui.WindowXMLDialog):
         if self.setNum == 'set1':
             self.list_label.setLabel(getLS(32014) % (''))
         else:
-            self.list_label.setLabel(getLS(32014) % ('('+self.setNum+')'))
+            self.list_label.setLabel(getLS(32014) % ('(' + self.setNum + ')'))

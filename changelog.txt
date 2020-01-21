@@ -1,5 +1,9 @@
+4.0.0
+- update for python 3
+
 3.0.4
 - fix string problem
+
 3.0.3
 - update language directory structure
 - update python except syntax
