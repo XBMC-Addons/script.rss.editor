@@ -21,7 +21,7 @@ class GUI(xbmcgui.WindowXMLDialog):
         self.defineControls()
         self.feedsList = self.parser.feedsList[self.setNum]['feedslist'] #shortname
         if not self.feedsList:
-            xbmcgui.Dialog().ok(getLS(40) + 'RssFeeds.xml', 'RssFeeds.xml ' + getLS(32041), getLS(32042), getLS(32043))
+            xbmcgui.Dialog().ok(getLS(40) + 'RssFeeds.xml', 'RssFeeds.xml ' + getLS(32041) + ' ' + getLS(32042) + ' ' + getLS(32043))
             self.closeDialog()
         self.showDialog()
 

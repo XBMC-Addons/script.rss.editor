@@ -20,7 +20,7 @@ class GUI(xbmcgui.WindowXMLDialog):
     def onInit(self):
         self.defineControls()
         if not self.parser.feedsList:
-            xbmcgui.Dialog().ok(getLS(40) + 'RssFeeds.xml', 'RssFeeds.xml ' + getLS(32041), getLS(32042), getLS(32043))
+            xbmcgui.Dialog().ok(getLS(40) + 'RssFeeds.xml', 'RssFeeds.xml ' + getLS(32041) + ' ' + getLS(32042) + ' ' + getLS(32043))
             self.closeDialog()
         self.showDialog()
 
