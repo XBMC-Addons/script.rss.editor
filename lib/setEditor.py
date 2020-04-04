@@ -151,7 +151,7 @@ class GUI(xbmcgui.WindowXMLDialog):
             setNum = self.list.getSelectedItem().getLabel()
         if setNum == 'set1':
             #Ask if user wants to set everything to default.
-            if xbmcgui.Dialog().yesno(getLS(32045), getLS(32046), getLS(32047)):
+            if xbmcgui.Dialog().yesno(getLS(32045), getLS(32046) + ' ' + getLS(32047)):
                 self.parser.feedsList[setNum] = {'feedslist':self.dFeedsList, 'attrs':{'rtl':'false','id':'1'}}
         else:
             del self.parser.feedsList[setNum]
