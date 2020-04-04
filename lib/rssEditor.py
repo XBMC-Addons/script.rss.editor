@@ -2,21 +2,20 @@ import os
 import sys
 import xbmc
 import xbmcgui
+import xbmcaddon
 from .xmlParser import XMLParser
 
 #enable localization
-getLS = sys.modules[ "__main__" ].LANGUAGE
-CWD = sys.modules[ "__main__" ].CWD
+getLS = xbmcaddon.Addon().getLocalizedString
+CWD = xbmcaddon.Addon().getAddonInfo('path')
 
 class GUI(xbmcgui.WindowXMLDialog):
-
     def __init__(self, *args, **kwargs):
         xbmcgui.WindowXMLDialog.__init__(self, *args, **kwargs)
         self.setNum = kwargs['setNum']
         self.parser = XMLParser()
         if self.parser.feedsTree:
             self.doModal()
-
 
     def onInit(self):
         self.defineControls()

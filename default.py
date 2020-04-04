@@ -16,7 +16,7 @@ def log(txt):
 log("'%s: version %s' initialized!" % (ID, VERSION, ))
 
 if (__name__ == "__main__"):
-    import resources.lib.rssEditor as rssEditor
+    import lib.rssEditor as rssEditor
     ui = rssEditor.GUI("script-RSS_Editor.xml", CWD, "default", setNum = 'set1')
     del ui
 

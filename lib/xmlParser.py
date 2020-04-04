@@ -36,11 +36,10 @@ def writexml(self, writer, indent="", addindent="", newl=""):
 # monkey patch to fix whitespace issues with toprettyxml
 Element.writexml = writexml
 #enable localization
-getLS = sys.modules[ "__main__" ].LANGUAGE
+getLS = xbmcaddon.Addon().getLocalizedString
 
 
 class XMLParser:
-
     def __init__(self):
         self.RssFeedsPath = xbmc.translatePath('special://userdata/RssFeeds.xml')
         sane = self.checkRssFeedPathSanity()
