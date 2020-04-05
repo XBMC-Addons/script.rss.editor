@@ -12,7 +12,7 @@
 		<description lang="en_GB">A Script for editing Kodi's built in RSS Ticker</description>
 		<description lang="hu_HU">A szkript képes szerkeszteni az Kodi beépített RSS forrás készletét</description>
 		<description lang="de_DE">Skript zum Bearbeiten des Kodi internen RSS Tickers</description>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<license>GPL-2.0-only</license>
 		<source>https://github.com/XBMC-Addons/script.rss.editor/</source>
 		<assets>
 			<icon>icon.png</icon>
