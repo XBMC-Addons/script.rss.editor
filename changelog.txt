@@ -1,5 +1,6 @@
 4.0.1
-- update
+- fix broken ok and yesno dialogs
+- skin improvements
 
 4.0.0
 - update for python 3

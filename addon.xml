@@ -17,5 +17,7 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
+		<news>- fix broken ok and yesno dialogs
+- skin improvements</news>
 	</extension>
 </addon>
