@@ -6,12 +6,6 @@
 	<extension point="xbmc.python.script" library="default.py" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en_GB">A Script for editing Kodi's built in RSS Ticker</summary>
-		<summary lang="hu_HU">RSS forrás szerkesztő</summary> 
-		<summary lang="de_DE">Skript zum Bearbeiten des Kodi internen RSS Tickers</summary>
-		<description lang="en_GB">A Script for editing Kodi's built in RSS Ticker</description>
-		<description lang="hu_HU">A szkript képes szerkeszteni az Kodi beépített RSS forrás készletét</description>
-		<description lang="de_DE">Skript zum Bearbeiten des Kodi internen RSS Tickers</description>
 		<license>GPL-2.0-only</license>
 		<source>https://github.com/XBMC-Addons/script.rss.editor/</source>
 		<assets>
@@ -19,5 +13,11 @@
 		</assets>
 		<news>- fix broken ok and yesno dialogs
 - skin improvements</news>
+		<summary lang="de_DE">Skript zum Bearbeiten des Kodi internen RSS Tickers</summary>
+		<summary lang="en_GB">A Script for editing Kodi's built in RSS Ticker</summary>
+		<summary lang="hu_HU">RSS forrás szerkesztő</summary>
+		<description lang="de_DE">Skript zum Bearbeiten des Kodi internen RSS Tickers</description>
+		<description lang="en_GB">A Script for editing Kodi's built in RSS Ticker</description>
+		<description lang="hu_HU">A szkript képes szerkeszteni az Kodi beépített RSS forrás készletét</description>
 	</extension>
 </addon>

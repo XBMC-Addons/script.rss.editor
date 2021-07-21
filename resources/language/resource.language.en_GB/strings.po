@@ -17,6 +17,14 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "Addon Summary"
+msgid "A Script for editing Kodi's built in RSS Ticker"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "A Script for editing Kodi's built in RSS Ticker"
+msgstr ""
+
 msgctxt "#32000"
 msgid "RSS Editor"
 msgstr ""
