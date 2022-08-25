@@ -19,6 +19,7 @@
 		<summary lang="fi_FI">Lisäosa Kodin sisäänrakennetun RSS-lukijan muokkaukseen</summary>
 		<summary lang="fr_FR">Un script pour éditer les flux RSS intégré de Kodi</summary>
 		<summary lang="hu_HU">RSS forrás szerkesztő</summary>
+		<summary lang="it_IT">Uno script per la modifica del ticker RSS integrato di Kodi</summary>
 		<summary lang="ko_KR">Kodi에 내장된 RSS Ticker를 편집하기 위한 스크립트</summary>
 		<summary lang="pl_PL">Skrypt do edycji wbudowanego w Kodi paska RSS</summary>
 		<summary lang="ru_RU">Скрипт для редактирования встроенной RSS-ленты Kodi</summary>
@@ -29,6 +30,7 @@
 		<description lang="fi_FI">Lisäosa Kodin sisäänrakennetun RSS-lukijan muokkaukseen</description>
 		<description lang="fr_FR">Un script pour éditer les flux RSS intégré de Kodi</description>
 		<description lang="hu_HU">A szkript képes szerkeszteni az Kodi beépített RSS forrás készletét</description>
+		<description lang="it_IT">Uno script per la modifica del ticker RSS integrato di Kodi</description>
 		<description lang="ko_KR">Kodi에 내장된 RSS Ticker를 편집하기 위한 스크립트</description>
 		<description lang="pl_PL">Skrypt do edycji wbudowanego w Kodi paska RSS</description>
 		<description lang="ru_RU">Скрипт для редактирования встроенной RSS-ленты Kodi</description>
